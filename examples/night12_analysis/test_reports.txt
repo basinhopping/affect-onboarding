@@ -1,0 +1,112 @@
+test results of cnn_3block_pooling_1 / 921e089dc483 (attention pooling), seeds [6, 7, 8, 9, 10]
+chosen because: the tuned 3-block CNN (threeblock_final): the recorded configuration with attention pooling, nothing else changed; session out, four classes, seeds 6 to 10. Every configuration of the sweep is a row of RULE_night12_tests.txt of analyses/night12_prep_20261012, fixed before any run of night 12, so nothing is chosen here; recorded before any test file of the sweep reached the container.
+  test UA 0.5637 [0.5511, 0.5763] (95% t interval over seeds), SD 0.0101
+  test WA 0.5407 [0.5338, 0.5476] (95% t interval over seeds), SD 0.0055
+  test macro-F1 0.5400 [0.5336, 0.5465] (95% t interval over seeds), SD 0.0052
+  recall neu 0.485  hap+exc 0.421  ang 0.616  sad 0.733
+  UA by gender: F 0.5643  M 0.5542
+  UA by kind: impro 0.6081  script 0.5007
+  seed 6: UA 0.5817 | test_S1 0.5786  test_S2 0.5765  test_S3 0.5615  test_S4 0.5739  test_S5 0.6178
+  seed 7: UA 0.5614 | test_S1 0.6048  test_S2 0.5410  test_S3 0.5334  test_S4 0.5414  test_S5 0.5864
+  seed 8: UA 0.5594 | test_S1 0.6113  test_S2 0.5203  test_S3 0.5114  test_S4 0.5531  test_S5 0.6011
+  seed 9: UA 0.5582 | test_S1 0.5903  test_S2 0.5120  test_S3 0.5444  test_S4 0.5423  test_S5 0.6021
+  seed 10: UA 0.5579 | test_S1 0.5574  test_S2 0.5840  test_S3 0.5286  test_S4 0.5576  test_S5 0.5616
+saved /home/claude/affect/artifacts/test_reports/pool_3block_attention_20261012T180329_592634Z
+test results of cnn_3block_pooling_1 / b02a0e8aeaa0 (max pooling), seeds [6, 7, 8, 9, 10]
+chosen because: the tuned 3-block CNN (threeblock_final): the recorded configuration with max pooling, nothing else changed; session out, four classes, seeds 6 to 10. Every configuration of the sweep is a row of RULE_night12_tests.txt of analyses/night12_prep_20261012, fixed before any run of night 12, so nothing is chosen here; recorded before any test file of the sweep reached the container.
+  test UA 0.5937 [0.5854, 0.6020] (95% t interval over seeds), SD 0.0067
+  test WA 0.5734 [0.5677, 0.5790] (95% t interval over seeds), SD 0.0046
+  test macro-F1 0.5747 [0.5672, 0.5823] (95% t interval over seeds), SD 0.0061
+  recall neu 0.541  hap+exc 0.426  ang 0.672  sad 0.735
+  UA by gender: F 0.5906  M 0.5840
+  UA by kind: impro 0.6425  script 0.5301
+  seed 6: UA 0.5881 | test_S1 0.6106  test_S2 0.5961  test_S3 0.5436  test_S4 0.5781  test_S5 0.6122
+  seed 7: UA 0.6028 | test_S1 0.5982  test_S2 0.6191  test_S3 0.5746  test_S4 0.6006  test_S5 0.6217
+  seed 8: UA 0.5869 | test_S1 0.5703  test_S2 0.6232  test_S3 0.5517  test_S4 0.5582  test_S5 0.6311
+  seed 9: UA 0.5927 | test_S1 0.6283  test_S2 0.6070  test_S3 0.5590  test_S4 0.5594  test_S5 0.6101
+  seed 10: UA 0.5978 | test_S1 0.6101  test_S2 0.6332  test_S3 0.5404  test_S4 0.5904  test_S5 0.6147
+saved /home/claude/affect/artifacts/test_reports/pool_3block_max_20261012T180328_489910Z
+test results of cnn_3block_pooling_1 / 333519f4274a (mean pooling), seeds [6, 7, 8, 9, 10]
+chosen because: the tuned 3-block CNN (threeblock_final): the recorded configuration with mean pooling, nothing else changed; session out, four classes, seeds 6 to 10. Every configuration of the sweep is a row of RULE_night12_tests.txt of analyses/night12_prep_20261012, fixed before any run of night 12, so nothing is chosen here; recorded before any test file of the sweep reached the container.
+  test UA 0.5756 [0.5603, 0.5910] (95% t interval over seeds), SD 0.0124
+  test WA 0.5505 [0.5309, 0.5701] (95% t interval over seeds), SD 0.0158
+  test macro-F1 0.5464 [0.5233, 0.5694] (95% t interval over seeds), SD 0.0186
+  recall neu 0.494  hap+exc 0.401  ang 0.670  sad 0.738
+  UA by gender: F 0.5758  M 0.5693
+  UA by kind: impro 0.6358  script 0.4912
+  seed 6: UA 0.5937 | test_S1 0.6228  test_S2 0.6275  test_S3 0.5569  test_S4 0.5696  test_S5 0.5916
+  seed 7: UA 0.5756 | test_S1 0.5809  test_S2 0.6068  test_S3 0.5187  test_S4 0.5735  test_S5 0.5979
+  seed 8: UA 0.5738 | test_S1 0.5712  test_S2 0.6051  test_S3 0.5485  test_S4 0.5120  test_S5 0.6324
+  seed 9: UA 0.5589 | test_S1 0.6020  test_S2 0.5554  test_S3 0.5239  test_S4 0.5139  test_S5 0.5991
+  seed 10: UA 0.5762 | test_S1 0.5955  test_S2 0.5954  test_S3 0.5416  test_S4 0.5971  test_S5 0.5512
+saved /home/claude/affect/artifacts/test_reports/pool_3block_mean_20261012T180327_430231Z
+test results of cnn_3block_pooling_1 / e0c211fcced3 (base), seeds [6, 7, 8, 9, 10]
+chosen because: the tuned 3-block CNN (threeblock_final): the recorded configuration, nothing else changed; session out, four classes, seeds 6 to 10. Every configuration of the sweep is a row of RULE_night12_tests.txt of analyses/night12_prep_20261012, fixed before any run of night 12, so nothing is chosen here; recorded before any test file of the sweep reached the container.
+  test UA 0.6010 [0.5920, 0.6100] (95% t interval over seeds), SD 0.0073
+  test WA 0.5771 [0.5668, 0.5873] (95% t interval over seeds), SD 0.0083
+  test macro-F1 0.5759 [0.5653, 0.5866] (95% t interval over seeds), SD 0.0086
+  recall neu 0.518  hap+exc 0.436  ang 0.685  sad 0.765
+  UA by gender: F 0.6039  M 0.5909
+  UA by kind: impro 0.6571  script 0.5228
+  seed 6: UA 0.6053 | test_S1 0.6261  test_S2 0.6163  test_S3 0.5772  test_S4 0.6063  test_S5 0.6005
+  seed 7: UA 0.6113 | test_S1 0.6298  test_S2 0.6340  test_S3 0.5725  test_S4 0.5798  test_S5 0.6405
+  seed 8: UA 0.5954 | test_S1 0.6022  test_S2 0.6082  test_S3 0.5556  test_S4 0.5821  test_S5 0.6288
+  seed 9: UA 0.5991 | test_S1 0.6043  test_S2 0.6398  test_S3 0.5668  test_S4 0.5566  test_S5 0.6279
+  seed 10: UA 0.5938 | test_S1 0.6316  test_S2 0.6259  test_S3 0.5257  test_S4 0.5483  test_S5 0.6378
+saved /home/claude/affect/artifacts/test_reports/pool_3block_sd_20261012T180326_369855Z
+test results of cnn_final_3_pooling_1 / c24792ed904e (attention pooling), seeds [6, 7, 8, 9, 10]
+chosen because: cnn_final_3: the recorded configuration with attention pooling, nothing else changed; session out, four classes, seeds 6 to 10. Every configuration of the sweep is a row of RULE_night12_tests.txt of analyses/night12_prep_20261012, fixed before any run of night 12, so nothing is chosen here; recorded before any test file of the sweep reached the container.
+  test UA 0.5832 [0.5690, 0.5975] (95% t interval over seeds), SD 0.0115
+  test WA 0.5562 [0.5423, 0.5700] (95% t interval over seeds), SD 0.0111
+  test macro-F1 0.5544 [0.5396, 0.5692] (95% t interval over seeds), SD 0.0119
+  recall neu 0.434  hap+exc 0.451  ang 0.657  sad 0.791
+  UA by gender: F 0.5753  M 0.5812
+  UA by kind: impro 0.6212  script 0.5198
+  seed 6: UA 0.5993 | test_S1 0.6275  test_S2 0.6043  test_S3 0.5582  test_S4 0.6014  test_S5 0.6050
+  seed 7: UA 0.5705 | test_S1 0.5802  test_S2 0.6020  test_S3 0.5181  test_S4 0.5795  test_S5 0.5728
+  seed 8: UA 0.5797 | test_S1 0.5927  test_S2 0.5849  test_S3 0.5499  test_S4 0.5813  test_S5 0.5900
+  seed 9: UA 0.5764 | test_S1 0.5866  test_S2 0.5991  test_S3 0.5176  test_S4 0.5907  test_S5 0.5879
+  seed 10: UA 0.5902 | test_S1 0.6009  test_S2 0.6123  test_S3 0.5526  test_S4 0.5878  test_S5 0.5975
+saved /home/claude/affect/artifacts/test_reports/pool_final_3_attention_20261012T180334_397648Z
+test results of cnn_final_3_pooling_1 / 765ac0adb256 (max pooling), seeds [6, 7, 8, 9, 10]
+chosen because: cnn_final_3: the recorded configuration with max pooling, nothing else changed; session out, four classes, seeds 6 to 10. Every configuration of the sweep is a row of RULE_night12_tests.txt of analyses/night12_prep_20261012, fixed before any run of night 12, so nothing is chosen here; recorded before any test file of the sweep reached the container.
+  test UA 0.5999 [0.5936, 0.6062] (95% t interval over seeds), SD 0.0051
+  test WA 0.5771 [0.5690, 0.5852] (95% t interval over seeds), SD 0.0065
+  test macro-F1 0.5757 [0.5674, 0.5841] (95% t interval over seeds), SD 0.0067
+  recall neu 0.438  hap+exc 0.496  ang 0.702  sad 0.764
+  UA by gender: F 0.5985  M 0.5951
+  UA by kind: impro 0.6329  script 0.5443
+  seed 6: UA 0.5981 | test_S1 0.6400  test_S2 0.6014  test_S3 0.5652  test_S4 0.5617  test_S5 0.6223
+  seed 7: UA 0.5917 | test_S1 0.6277  test_S2 0.5958  test_S3 0.5523  test_S4 0.5617  test_S5 0.6209
+  seed 8: UA 0.6032 | test_S1 0.6642  test_S2 0.5860  test_S3 0.5445  test_S4 0.5852  test_S5 0.6361
+  seed 9: UA 0.6034 | test_S1 0.6231  test_S2 0.6126  test_S3 0.5628  test_S4 0.5898  test_S5 0.6285
+  seed 10: UA 0.6030 | test_S1 0.6435  test_S2 0.5989  test_S3 0.5535  test_S4 0.5831  test_S5 0.6362
+saved /home/claude/affect/artifacts/test_reports/pool_final_3_max_20261012T180333_250355Z
+test results of cnn_final_3_pooling_1 / 7977141b6ba3 (base), seeds [6, 7, 8, 9, 10]
+chosen because: cnn_final_3: the recorded configuration, nothing else changed; session out, four classes, seeds 6 to 10. Every configuration of the sweep is a row of RULE_night12_tests.txt of analyses/night12_prep_20261012, fixed before any run of night 12, so nothing is chosen here; recorded before any test file of the sweep reached the container.
+  test UA 0.6073 [0.6026, 0.6120] (95% t interval over seeds), SD 0.0038
+  test WA 0.5791 [0.5728, 0.5855] (95% t interval over seeds), SD 0.0051
+  test macro-F1 0.5801 [0.5730, 0.5872] (95% t interval over seeds), SD 0.0057
+  recall neu 0.468  hap+exc 0.455  ang 0.722  sad 0.784
+  UA by gender: F 0.6110  M 0.5982
+  UA by kind: impro 0.6506  script 0.5412
+  seed 6: UA 0.6133 | test_S1 0.6476  test_S2 0.6156  test_S3 0.5524  test_S4 0.6375  test_S5 0.6134
+  seed 7: UA 0.6053 | test_S1 0.5722  test_S2 0.6361  test_S3 0.5747  test_S4 0.6123  test_S5 0.6313
+  seed 8: UA 0.6079 | test_S1 0.6321  test_S2 0.6137  test_S3 0.6013  test_S4 0.5716  test_S5 0.6208
+  seed 9: UA 0.6032 | test_S1 0.5856  test_S2 0.6350  test_S3 0.5524  test_S4 0.5990  test_S5 0.6441
+  seed 10: UA 0.6069 | test_S1 0.6168  test_S2 0.6364  test_S3 0.5706  test_S4 0.5965  test_S5 0.6139
+saved /home/claude/affect/artifacts/test_reports/pool_final_3_mean_20261012T180330_802903Z
+test results of cnn_final_3_pooling_1 / 9a8be8b7300a (SD pooling), seeds [6, 7, 8, 9, 10]
+chosen because: cnn_final_3: the recorded configuration with SD pooling, nothing else changed; session out, four classes, seeds 6 to 10. Every configuration of the sweep is a row of RULE_night12_tests.txt of analyses/night12_prep_20261012, fixed before any run of night 12, so nothing is chosen here; recorded before any test file of the sweep reached the container.
+  test UA 0.6083 [0.6013, 0.6152] (95% t interval over seeds), SD 0.0056
+  test WA 0.5852 [0.5752, 0.5951] (95% t interval over seeds), SD 0.0080
+  test macro-F1 0.5869 [0.5779, 0.5959] (95% t interval over seeds), SD 0.0072
+  recall neu 0.454  hap+exc 0.495  ang 0.697  sad 0.787
+  UA by gender: F 0.6060  M 0.6040
+  UA by kind: impro 0.6439  script 0.5498
+  seed 6: UA 0.6165 | test_S1 0.6493  test_S2 0.6012  test_S3 0.5732  test_S4 0.5952  test_S5 0.6637
+  seed 7: UA 0.6106 | test_S1 0.6271  test_S2 0.6401  test_S3 0.5597  test_S4 0.5876  test_S5 0.6387
+  seed 8: UA 0.6053 | test_S1 0.6218  test_S2 0.6095  test_S3 0.5639  test_S4 0.5936  test_S5 0.6379
+  seed 9: UA 0.6070 | test_S1 0.6075  test_S2 0.6376  test_S3 0.5554  test_S4 0.6134  test_S5 0.6212
+  seed 10: UA 0.6018 | test_S1 0.6383  test_S2 0.6096  test_S3 0.5609  test_S4 0.5922  test_S5 0.6080
+saved /home/claude/affect/artifacts/test_reports/pool_final_3_sd_20261012T180332_108494Z

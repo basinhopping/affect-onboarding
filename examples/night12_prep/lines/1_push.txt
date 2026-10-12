@@ -1,0 +1,1 @@
+powershell -ExecutionPolicy Bypass -File "C:\Affective Computing\affect\scripts\push.ps1"

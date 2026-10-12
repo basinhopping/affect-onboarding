@@ -1,0 +1,10 @@
+cnn_3block_pooling_1: 100 jobs, 4 configurations, base e0c211fcced3 = threeblock_final
+  mean pooling: differs from the base in {'model.pooling': ('stats', 'mean')}
+  max pooling: differs from the base in {'model.pooling': ('stats', 'max')}
+  attention pooling: differs from the base in {'model.pooling': ('stats', 'attention')}
+  written sweeps/cnn_3block_pooling_1.json
+cnn_final_3_pooling_1: 100 jobs, 4 configurations, base 7977141b6ba3 = cnn_final_3
+  SD pooling: differs from the base in {'model.pooling': ('mean', 'stats')}
+  max pooling: differs from the base in {'model.pooling': ('mean', 'max')}
+  attention pooling: differs from the base in {'model.pooling': ('mean', 'attention')}
+  written sweeps/cnn_final_3_pooling_1.json

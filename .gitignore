@@ -1,0 +1,5 @@
+# The raw IEMOCAP folders go here but never into git (licensed data).
+/IEMOCAP_full_release/
+/wav/
+# A clone of the affect code, if it is ever made inside this folder.
+/affect/

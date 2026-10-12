@@ -1,0 +1,16 @@
+{
+ "sweeps": {
+  "cnn_3block_pooling_1": {
+   "complete_runs": 100,
+   "with_copies": 25,
+   "identical": 25
+  },
+  "cnn_final_3_pooling_1": {
+   "complete_runs": 100,
+   "with_copies": 25,
+   "identical": 25
+  }
+ },
+ "problems": [],
+ "passed": true
+}

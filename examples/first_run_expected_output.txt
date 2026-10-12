@@ -1,0 +1,22 @@
+intro_base_four: analyze ok, select ok (intro_four), test-report UA 0.552007, record's seed-1 fold mean 0.552007: EQUAL
+--- analyze output (first lines):
+sweep intro_base_four: 1 configurations, 5 complete runs (validation only; 95% intervals, 2000 bootstrap draws)
+baseline cf0495a296e9: seeds [1], UA 0.5792, WA 0.5456, macro-F1 0.5411
+  recall neu 0.458  hap+exc 0.435  ang 0.721  sad 0.703
+top 1 of 1 by mean validation UA; difference = configuration minus baseline on the same seeds:
+  0.5792  (baseline)  | base: base
+      by gender: F 0.5944 M 0.5591; by kind: impro 0.6544 script 0.4923
+--- test-report output (first lines):
+test results of intro_base_four / cf0495a296e9 (base), seeds [1]
+chosen because: First run: the baseline under four_merged, seed 1, to learn the steps
+  test UA 0.5520
+  test WA 0.5242
+  test macro-F1 0.5134
+  recall neu 0.442  hap+exc 0.370  ang 0.701  sad 0.695
+  UA by gender: F 0.5510  M 0.5446
+  UA by kind: impro 0.6158  script 0.4765
+  seed 1: UA 0.5520 | test_S1 0.5941  test_S2 0.5592  test_S3 0.4926  test_S4 0.5116  test_S5 0.6026
+saved /tmp/simintro_473gdbu1/artifacts/test_reports/intro_four_20261012T072510_235332Z
+intro_base_fru5: analyze ok, select ok (intro_fru5), test-report UA 0.434456, record's seed-1 fold mean 0.434456: EQUAL
+intro_base_fru4: analyze ok, select ok (intro_fru4), test-report UA 0.516731, record's seed-1 fold mean 0.516731: EQUAL
+intro_base_no_neu3: analyze ok, select ok (intro_no_neu3), test-report UA 0.687279, record's seed-1 fold mean 0.687279: EQUAL

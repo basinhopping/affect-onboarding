@@ -1,0 +1,10 @@
+test files of these sweeps in the container: 0
+pool_3block_sd: e0c211fcced3 of cnn_3block_pooling_1, validation UA 0.6340 over seeds 6 to 10, 25 runs, report cnn_3block_pooling_1_20261012T180132_038893Z
+pool_3block_mean: 333519f4274a of cnn_3block_pooling_1, validation UA 0.6171 over seeds 6 to 10, 25 runs, report cnn_3block_pooling_1_20261012T180132_038893Z
+pool_3block_max: b02a0e8aeaa0 of cnn_3block_pooling_1, validation UA 0.6198 over seeds 6 to 10, 25 runs, report cnn_3block_pooling_1_20261012T180132_038893Z
+pool_3block_attention: 921e089dc483 of cnn_3block_pooling_1, validation UA 0.5929 over seeds 6 to 10, 25 runs, report cnn_3block_pooling_1_20261012T180132_038893Z
+pool_final_3_mean: 7977141b6ba3 of cnn_final_3_pooling_1, validation UA 0.6430 over seeds 6 to 10, 25 runs, report cnn_final_3_pooling_1_20261012T180140_720505Z
+pool_final_3_sd: 9a8be8b7300a of cnn_final_3_pooling_1, validation UA 0.6420 over seeds 6 to 10, 25 runs, report cnn_final_3_pooling_1_20261012T180140_720505Z
+pool_final_3_max: 765ac0adb256 of cnn_final_3_pooling_1, validation UA 0.6336 over seeds 6 to 10, 25 runs, report cnn_final_3_pooling_1_20261012T180140_720505Z
+pool_final_3_attention: c24792ed904e of cnn_final_3_pooling_1, validation UA 0.6123 over seeds 6 to 10, 25 runs, report cnn_final_3_pooling_1_20261012T180140_720505Z
+SELECTIONS PRINTED (8 rows, 0 unfinished), NOTHING WRITTEN

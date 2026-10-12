@@ -1,0 +1,71 @@
+Night 12 (the night of 2026-10-11 to 10-12, Pacific): the pooling test on the two finalist CNNs. Which runs are made,
+which test files are read and which comparisons are made. Fixed on 2026-10-12 at 06:27 UTC (Sunday 23:27, Pacific),
+in the Cowork container, before any file of night 12 had left the node: Harrison was given the night's lines at
+06:24 UTC, and at this time the PC and the container held no run folder or sweep record of either sweep. Saved on
+the PC in this folder; its SHA-256 is in README.txt of this folder. It adds to RULE_night9_tests.txt and
+RULE_night11_tests.txt and changes nothing in them.
+
+Why. Dr. Luitel asked what the grid searches found about pooling, specifically SD pooling. The screens and grids
+answer it on validation only and around other configurations: alone on the 3-block base, SD pooling +0.007 (not
+detectable), max +0.001, attention -0.016; in the 3-block screen's random draws SD 0.595 against mean 0.584; on
+the 4-block baseline in grid 1, SD pooling -0.008 on average. This test swaps the pooling of the two finalists
+and nothing else.
+
+What was known when this was written. The finalists' own test results on seeds 6 to 10 under session out:
+threeblock_final (the tuned 3-block CNN, SD pooling, e0c211fcced3) 0.601, cnn_final_3 (mean pooling, 7977141b6ba3)
+0.607 (families N9B and N9C). No run with another pooling exists for either finalist.
+
+Rows. The two sweep files written by make_night12.py in this folder (sweeps/cnn_3block_pooling_1.json, SHA-256
+1bb3cd56adb223bd863e52c0d8ec68e3ebd75fafa83877f28fbcfc0d04daf653; sweeps/cnn_final_3_pooling_1.json, SHA-256
+27f4cbad8c3dade5bbf32eb8384ba3107b30c7b1d06cc8a3ca6c7ee862fa6712): each finalist's recorded settings, and the same
+with only model.pooling changed; four merged classes, session-out folds test_S1 to test_S5, seeds 6 to 10; 8 rows of
+25 runs, 200 runs in all. The selection records, each written before any test file of night 12 is opened, choose
+nothing (every configuration of both sweeps is a row):
+   pool_3block_sd          cnn_3block_pooling_1, its base (threeblock_final's settings, SD pooling)
+   pool_3block_mean        the same with mean pooling
+   pool_3block_max         the same with max pooling
+   pool_3block_attention   the same with attention pooling
+   pool_final_3_mean       cnn_final_3_pooling_1, its base (cnn_final_3's settings, mean pooling)
+   pool_final_3_sd         the same with SD pooling
+   pool_final_3_max        the same with max pooling
+   pool_final_3_attention  the same with attention pooling
+
+Order.
+ 1. The pull of night 12: both sweeps' runs and records, the night's logs, smoke runs and checks.
+ 2. `affect.cli analyze` of each sweep (confidence 0.95, 2,000 draws, seed 20261012): validation only, recorded;
+    nothing below depends on it.
+ 3. `affect.cli compare-runs` of each sweep: each base's 25 runs against the confirmation's runs of the same
+    configuration, fold and seed (cnn_3block_confirm_1 and cnn_confirm_3), which should be identical; reported.
+ 4. The 8 selection records above, then `affect.cli test-report` of each: the test files of exactly these rows.
+ 5. Families N12A and N12B, and the tables reported apart.
+ No test file of any other run is opened.
+
+Family N12A, the tuned 3-block CNN, Holm over 3:
+   pool_3block_mean minus pool_3block_sd
+   pool_3block_max minus pool_3block_sd
+   pool_3block_attention minus pool_3block_sd
+Family N12B, cnn_final_3, Holm over 3:
+   pool_final_3_sd minus pool_final_3_mean
+   pool_final_3_max minus pool_final_3_mean
+   pool_final_3_attention minus pool_final_3_mean
+
+Reported apart, without a test of a difference: every row's test UA with its 95% t interval over seeds, its WA,
+macro-F1 and each class's recall; its validation UA and its training UA at the kept epoch; the order of the four
+poolings within each finalist; whether each base's runs equal the confirmation's.
+
+Unfinished rows. The analysis starts once night 12's queue is empty or its schedule's end step (08:00 Pacific,
+2026-10-12) has run. A row whose 25 runs are not all complete then gets no record and no test read before the
+meeting of 2026-10-12; its comparison leaves its family (Holm over those that remain) and it is listed as
+unfinished. A sweep whose smoke test fails is not run and is listed with its log.
+
+Method: pairing.py (analyses/night9_20261009, the functions of families N9B to N9G), unchanged, with 2,000 draws:
+the difference in fold-mean test UA; a bootstrap over seeds and, within each fold, test utterances (the same resample
+for both rows), generator seed 20261012, the families computed in the order N12A, N12B; a two-sided p-value (twice
+the smaller tail share around zero, at least 1/2,000); Holm's correction within each family; rows paired by seed
+number, fold and test utterance.
+Amended on 2026-10-12 at 06:44 UTC (23:44 Pacific), still before any file of night 12 had left the node: the method
+first said 20,000 draws. The dry run (analyses/night12_20261012/sim_morning) timed pairing.py's per-draw loop at
+about 14 ms a draw here, so 20,000 draws for the 6 comparisons would take about half an hour on the morning of the
+meeting; 2,000, as in every earlier family, take about 3 minutes. With 3 comparisons a family, 2,000 draws resolve a
+Holm-adjusted p down to 0.003 (0.0015 at the floor); nothing else changes.
+Once a test file of night 12 has been read, nothing here changes.

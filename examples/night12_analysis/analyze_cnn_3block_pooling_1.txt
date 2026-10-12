@@ -1,0 +1,13 @@
+sweep cnn_3block_pooling_1: 4 configurations, 100 complete runs (validation only; 95% intervals, 2000 bootstrap draws)
+baseline e0c211fcced3: seeds [6, 7, 8, 9, 10], UA 0.6340 [0.6270, 0.6409], SD 0.0056, WA 0.6072, macro-F1 0.6103
+  recall neu 0.568  hap+exc 0.471  ang 0.697  sad 0.800
+top 4 of 4 by mean validation UA; difference = configuration minus baseline on the same seeds:
+  0.6340 [0.6270, 0.6409]  (baseline)  | base: base
+      by gender: F 0.6369 M 0.6199; by kind: impro 0.6842 script 0.5600
+  0.6198 [0.6152, 0.6244]  diff -0.0142 bootstrap [-0.0234, -0.0054] seeds [-0.0195, -0.0089]  P(better) 0.00  Holm p 0.002  worse  | pooling: max pooling
+      by gender: F 0.6176 M 0.6067; by kind: impro 0.6706 script 0.5512
+  0.6171 [0.6042, 0.6301]  diff -0.0168 bootstrap [-0.0289, -0.0052] seeds [-0.0243, -0.0094]  P(better) 0.04  Holm p 0.002  worse  | pooling: mean pooling
+      by gender: F 0.6222 M 0.6018; by kind: impro 0.6783 script 0.5332
+  0.5929 [0.5870, 0.5988]  diff -0.0411 bootstrap [-0.0513, -0.0313] seeds [-0.0514, -0.0308]  P(better) 0.00  Holm p 0.000  worse  | pooling: attention pooling
+      by gender: F 0.5964 M 0.5827; by kind: impro 0.6441 script 0.5229
+saved /home/claude/affect/artifacts/analysis/cnn_3block_pooling_1_20261012T180132_038893Z
